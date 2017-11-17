@@ -8,7 +8,7 @@
 
 h2 {
     position: fixed;
-    top: 60px;
+    top: 100px;
     left: 5px;
     width: 200%;
 }
@@ -21,4 +21,26 @@ letter-spacing: -1px;
 background: rgb(0, 0, 0); /* fallback color */
 background: rgba(0, 0, 0, 0.7);
 padding: 10px;
+}
+
+.ikony {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-end;
+    /*height: 100%;*/
+    /*width: 64px;*/
+}
+/*.ikony img{*/
+    /*height: 64px;*/
+
+}
+
+.opis-ikon {
+    position: absolute;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+
 }
