@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: #b4c4ed;
+
 }
 
 #nav {
@@ -14,7 +15,6 @@ body {
 #nav-menu {
     width: 960px;
     margin: 0 auto;
-    text-align: left;
     text-align: center;
 }
 
@@ -33,4 +33,45 @@ body {
 #nav ul li a {
     color: white;
     text-decoration: none;
+}
+
+.flexContainer {
+    border-style: solid;
+    border-color: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    max-height: 260px;
+    width: calc(100%-6px);
+}
+
+.flexItem {
+    border: darkgray solid;
+    background: silver;
+    padding: 20px 20px;
+
+}
+
+.flexItem img {
+    max-height: 130px;
+    max-width: 130px;
+    display: flex;
+
+    }
+
+.inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.inside p:first-child {
+    font-size: 120%;
+}
+
+.inside p:last-child {
+    font-family: "Droid Sans Mono Slashed";
+    font-style: italic;
 }
