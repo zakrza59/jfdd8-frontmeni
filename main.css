@@ -1,3 +1,39 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #b4c4ed;
+}
+
+#nav {
+    background-color: #222;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#nav-menu {
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+    text-align: center;
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 30px;
+    margin: 0;
+}
+
+#nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+
+}
+
+#nav ul li a {
+    color: white;
+    text-decoration: none;
+}
 
 .sign-up-form label textarea,
 .name-label input,
