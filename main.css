@@ -79,7 +79,7 @@ body {
 }
 
 .submit-button {
-    background-image: url("img/send.svg");
+    background-image: url("img/send-icon.svg");
     background-repeat: no-repeat;
     border:0;
     padding: 33px 25px 25px;
