@@ -49,7 +49,7 @@ body {
     padding: 10px;
 }
 
-#formularz {
+#form {
     background-color: blue;
     margin: 0;
 }
@@ -63,7 +63,7 @@ body {
 }
 
 .contact-info {
-    background-color: #20438C;
+    background-color: #12406F;
     float: right;
     width: 33.3%;
     text-align: center;
@@ -85,4 +85,7 @@ body {
     padding: 33px 25px 25px;
     background-color: white;
 
+}
+.address, .phone-number, .email-address {
+    clear: both;
 }
