@@ -24,7 +24,7 @@ padding: 10px;
 }
 
 .ikony {
-    display: flex;
+    display: inline;
     justify-content: space-around;
     flex-direction: column;
     align-items: flex-end;
@@ -34,7 +34,7 @@ padding: 10px;
 /*.ikony img{*/
     /*height: 64px;*/
 
-}
+/*}*/
 
 .opis-ikon {
     position: absolute;
