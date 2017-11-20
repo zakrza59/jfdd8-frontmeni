@@ -47,28 +47,30 @@
 </section>
 
 <section id="formularz" class="form">
-    <form class="sign-up-form">
-        <h2 class="message-header">
-            <br/>
-            Send us a Message <img src="iconmonstr-email-8.svg" alt="message-icon">
-        </h2>
+        <div class="left-container">
+            <h2 class="message-header">
+                <br/>
+                Send us a Message <img src="iconmonstr-email-8.svg" alt="message-icon">
+            </h2>
+            <form class="sign-up-form">
+            <label class="email-label">
+               Email:
+                <input type="email" name="user-email" placeholder="jan.kowalski@gmail.com" required/>
+            </label>
+                <button class="submit-button"></button>
 
-        <label class="email-label">
-            <span>Email:</span>
-            <input type="email" name="user-email" placeholder="jan.kowalski@gmail.com" required />
-            <input type="submit" value="Submit">
-        </label>
-
-        <label class="submit-button">
-
-        </label>
-        <div class="security-text">
-            <p>Informujemy, że zostanie wysłany tylko jeden email z informacją o premierze.
-                Prosimy regularnie sprawdzać e-mail!</p>
-            <p>Wszelkie wysłane przez Państwa dane są chronione i nie zostaną użyte w celach niezwiązanych z premierą
-                aplikacji CalcoFit.</p>
+            </form>
+            <div class="security-text">
+                <p>Informujemy, że zostanie wysłany tylko jeden email z informacją o premierze.
+                    Prosimy regularnie sprawdzać e-mail!</p>
+                <p>Wszelkie wysłane przez Państwa dane są chronione i nie zostaną użyte w celach niezwiązanych z premierą
+                    aplikacji CalcoFit.</p>
+            </div>
         </div>
-    </form>
+        <aside class="contact-info">
+            <span>Contact Information</span>
+            <p>ul.Grunwaldzka 472, </p>
+        </aside>
 </section>
 </body>
 </html>
