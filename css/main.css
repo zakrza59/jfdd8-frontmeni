@@ -1,9 +1,9 @@
 .image-container {
-    background-image: url("../pexels-photo-260426.jpeg");
+    background-image: url("https://www.irongym.com.au/assets/images/slider-images/slide3.jpg");
     background-size: cover;
     background-repeat:no-repeat;
-    height: 300px;
-    background-position: 50%;
+    height: 15em;
+
 }
 
 h2 {
@@ -33,4 +33,7 @@ padding: 10px;
 .opis-ikon {
     color: white;
     text-align: center;
+}
+#zajawka p {
+    color: white;
 }
