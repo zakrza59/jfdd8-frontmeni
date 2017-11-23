@@ -66,6 +66,10 @@ body {
     width: 66.6%;
     float: left;
 }
+.message-header {
+    font-size: 30px;
+    color: #12406F;
+}
 
 .contact-info {
     color: #fff;
@@ -77,6 +81,8 @@ body {
     text-align: left;
     overflow: hidden;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 .contact-info > span.background-icon{
     position: absolute;
@@ -87,13 +93,20 @@ body {
     font-size: 800%;
 }
 
-.contact-info p img{
+.contact-info p img {
     width: 30px;
     float: left;
     opacity: 0.6;
     margin: 3px 5px 0 0;
 }
 
+.contact-info p {
+    flex-grow:1;
+}
+.contact-info p span {
+    color: #CFD8E0;
+    opacity: 0.6;
+}
 .security-text {
     margin: 0 auto;
     text-align: center;
