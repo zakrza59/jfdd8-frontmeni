@@ -1,119 +1,144 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CalcoFit</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../fjdd8-frontmeniboot/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
-
-
 <body>
+<div class="article" style="background: url(/tlo.jpg)">
+</div>
 
-
-<section id="zajawka">
-
-    <div class="image-container">
-
-    </div>
-
-
-    <p>Twój portal jako osobisty doradca</p>
-    <p>Z nami będziesz
-    <p>
-    <p>tutaj powstanie odniesienie do formularza jak powstanie</p>
-
-    <div class="ikony">
-
-     <div>
-    <img src="img/png/001-scale-1.png" alt="KG" class="ikonka1">
-         <p class="opis-ikon">Wylicz optymalne KG</p>
-
-     </div>
-     <div>
-    <img src="img/png/005-gym.png" alt="Serce-sztanga" class="ikonka2">
-         <p class="opis-ikon">Wiek a trening</p>
-     </div>
-     <div>
-    <img src="img/png/006-technology.png" alt="technologia" class="ikonka3">
-         <p class="opis-ikon">Czas ćwiczeń</p>
-     </div>
-     <div>
-    <img src="img/png/014-apple.png" alt="odzywianie" class="ikonka4">
-         <p class="opis-ikon">Tabele kaloryczne</p>
-    </div>
-    </div>
-</section>
-
-<section id="logo">
-</section>
-
-<section id="menu">
-    <div id="nav">
-        <div id="nav-menu">
+<nav class="navbar navbar-default  navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand" href="#">CalcoFit</a>-->
+            <!--NAZWA OBOK LOGA patrz main.css.70-->
             <a href="http://www.facebook.com">
-                <img id="logo" src="logo/logo.jpg" alt="calcoFit logo">
+                <img id="logo" src="logo/logo-calc.png" alt="calcoFit logo">
             </a>
-            <ul>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">MENU</a></li>
-                <li><a href="#">INFO</a></li>
-                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT US</a></li>
             </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <img src="header.jpg" class="img-responsive glowa">
         </div>
     </div>
-</section>
+</header>
 
-<section id="formularz">
-    <form class="sign-up-form">
-        <label class="name-label">
-            <span>Name:</span>
-            <input type="text" name="name" required>
-        </label>
-        <label class="email-label">
-            <span>Email:</span>
-            <input type="email" name="user-email" placeholder="jan.kowalski@gmail.com" required>
-        </label>
-        <label class="message-label">
-            <span>Message:</span>
-            <textarea rows="5" name="content" placeholder="If you have any questions type it here!"></textarea>
-        </label>
-        <label class="submit-button">
-            <input type="submit" value="Submit">
-        </label>
-    </form>
-
-    <div class="security-text">
-        <p>Informujemy, że zostanie wysłany tylko jeden email z informacją o premierze.
-            Prosimy regularnie sprawdzać e-mail!</p>
-        <p>Wszelkie wysłane przez Państwa dane są chronione i nie zostaną użyte w celach niezwiązanych z premierą
-            aplikacji CalcoFit.</p>
-    </div>
-
-</section>
-
-<section id="members">
-    <div class="flexContainer">
-
-        <div class="flexItem">
-            <img src="faces/2.jpeg" alt="Piotr">
-            <p class="opis-zdj">Piotr Zakrzewski -Front End Dev</p>
-            <a href="https://www.facebook.pl" class="fa fa-facebook"></a>
+<div class="zajawka container">
+    <div class="row logosy text-center">
+        <div class="col-xs-12 col-sm-6 col-lg-3">
+            <img src="png/1.png" class="img-circle" alt="waga" width="120" height="120">
+            <h2>Wylicz optymalną wagę</h2>
         </div>
-        <div class="flexItem">
-            <img src="faces/3.jpeg" alt="Marcin">
-            <p class="opis-zdj">Marcin Wiśniewski -Full Stack Dev</p>
-            <a href="https://www.facebook.pl" class="fa fa-facebook"></a>
+        <div class="col-xs-12 col-sm-6 col-lg-3">
+            <img src="png/2.png" class="img-circle" alt="serce" width="120" height="120">
+            <h2>Wiek vs trening</h2>
         </div>
-        <div class="flexItem">
-            <img src="faces/4.jpeg" alt="Dominik">
-            <p class="opis-zdj">Dominik Dutkiewicz -jest chory</p>
-            <a href="https://www.facebook.pl" class="fa fa-facebook"></a>
+        <div class="col-xs-12 col-sm-6 col-lg-3">
+            <img src="png/3.png" class="img-circle" alt="czas" width="120" height="120">
+            <h2>Czas ćwiczeń</h2>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-3">
+            <img src="png/4.png" class="img-circle" alt="kalorie" width="120" height="120">
+            <h2>Tabele kalorii</h2>
         </div>
     </div>
-</section>
+
+</div>
+
+<div class="container">
+    <div class="starter-template row">
+        <p class="lead">Twój portal jako osobisty doradca.<br> Z nami będziesz<br>tutaj powstanie odniesienie do
+            formularza jak powstanie</p>
+    </div>
+
+</div>
+
+<div id="main" class="container">
+    <section class="container" id="formularz">
+        <form class="sign-up-form row">
+            <label class="name-label">
+                <span>Name:</span>
+                <input type="text" name="name" required>
+            </label>
+            <label class="email-label">
+                <span>Email:</span>
+                <input type="email" name="user-email" placeholder="jan.kowalski@gmail.com" required>
+            </label>
+            <label class="message-label">
+                <span>Message:</span>
+                <textarea rows="5" name="content" placeholder="If you have any questions type it here!"></textarea>
+            </label>
+            <label class="submit-button">
+                <input type="submit" value="Submit">
+            </label>
+        </form>
+
+        <div class="security-text">
+            <p>Informujemy, że zostanie wysłany tylko jeden email z informacją o premierze.
+                Prosimy regularnie sprawdzać e-mail!</p>
+            <p>Wszelkie wysłane przez Państwa dane są chronione i nie zostaną użyte w celach niezwiązanych z premierą
+                aplikacji CalcoFit.</p>
+        </div>
+
+    </section>
+</div>
+
+<div class="members container">
+    <div class="row logosy1 text-center">
+        <div class="col-lg-4">
+            <img src="faces/1.jpeg" class="img-rounded" alt="Piotr Zakrzewski" width="120" height="120">
+            <h3>Piotr Zakrzewski</h3>
+        </div>
+        <div class="col-lg-4">
+            <img src="faces/2.jpeg" class="img-rounded" alt="Marcin Wiśniewski" width="120" height="120">
+            <h3>Marcin Wiśniewski</h3>
+        </div>
+        <div class="col-lg-4">
+            <img src="faces/3.jpeg" class="img-rounded" alt="Dominik Dutkiewicz" width="120" height="120">
+            <h3>Dominik Dutkiewicz</h3>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div>
+                STOPKA
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
 
 </body>
 </html>
+
