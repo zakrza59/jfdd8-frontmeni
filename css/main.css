@@ -1,43 +1,37 @@
-.image-container {
-    background-image: url("https://www.irongym.com.au/assets/images/slider-images/slide3.jpg");
-    background-size: cover;
-    background-repeat:no-repeat;
-    height: 15em;
-
+.navbar-default {
+    background-color: #0b1634;
+    border:0;
+    padding:10px 0;
+}
+.navbar {
+    border-radius:0;
+    margin-bottom:0;
+}
+.navbar-default .navbar-brand {
+    color:white;
+    font-weight:bold;
+}
+.navbar-default .navbar-nav>li>a {
+    color: rgb(255, 255, 255);
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #07a7ff;
+}
+.nav>li>a {
+    padding:15px 10px;
+}
+header {
+    padding:0;
 }
 
-h2 {
-    position: fixed;
-    top: 10%;
-    left: 5px;
-    width: 100%;
+
+
+.zajawka .logosy {
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
-h2 span{
-color: white;
-font: bold 58px Helvetica, Sans-Serif;
-font-size: 200%;
-letter-spacing: -1px;
-background: rgb(0, 0, 0); /* fallback color */
-background: rgba(0, 0, 0, 0.7);
-padding: 10px;
-}
-
-.ikony {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    padding: 60px;
-}
-
-.opis-ikon {
-    color: white;
-    text-align: center;
-}
-#zajawka p {
-    color: white;
-}
-.ikony img:hover {
+.logosy img:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
 }
@@ -54,4 +48,39 @@ padding: 10px;
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.zajawka {
+    background: #0b1634;
+    width: 100%;
+    color: white;
+}
+
+.members {
+    background: rgb(11, 22, 52);
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 0;
+    color: white;
+}
+
+
+#logo {
+    width: 13%;
+    min-width: 120px;
+    max-width: 155px;
+    border-radius: 50%;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+
+img.glowa {
+    padding-top: 70px;
+}
+
+footer{
+    background: black
+;
 }
