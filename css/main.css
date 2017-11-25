@@ -178,7 +178,11 @@ footer{
 }
 
 .article {
-    background-image: url("../backgrounds-image.jpg");
+    background-image: url("/backgrounds-image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+/*kolor tla tylko do podgladu*/
+.article{
+    background: #2b585d;
 }
