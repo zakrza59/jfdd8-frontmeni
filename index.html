@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway">
 
 </head>
 <body>
 <div class="article">
-
-
     <nav class="navbar navbar-default  navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -73,7 +72,6 @@
                 <h2>Tabele kalorii</h2>
             </div>
         </div>
-
     </div>
 
     <div class="container" id="niewiem">
@@ -84,72 +82,150 @@
 
     </div>
 
-    <section id="form" class="form">
-        <div class="left-container">
-            <h2 class="message-header">
-                <br/>
-                Send us a Message <img src="png/email-icon.svg" alt="message-icon">
-            </h2>
+    <div class="container-fluid product-extra-details">
+        <div class="row product-details">
+            <div class="col-xs-12 product-functions-title">
+                <h2>Dzięki <strong>aplikacji</strong> masz dostęp do mnóstwa funkcji!</h2>
+            </div>
+            <table class="product-functions">
+                <tr class="product-details-height">
+                    <td>
+                        <img src="png/apple.png" alt="apple image">
+                    </td>
+                    <td>
+                        <span>Wartości odżywcze produktów</span>
+                    </td>
+                </tr>
+                <tr class="product-details-height">
+                    <td>
+                        <img src="png/doughnut.png" alt="doughnut image">
+                        <span>VS</span>
+                        <img src="png/fish.png" alt="fish image">
+                    </td>
+                    <td>
+                        <span>Porównać kaloryczność produktów</span>
+                    </td>
+                </tr>
+                <tr class="product-details-height">
+                    <td>
+                        <img src="png/salad.png" alt="salad image">
+                    </td>
+                    <td>
+                        <span>Obliczyć kaloryczność dowolnego przepisu</span>
+                    </td>
+                </tr>
+            </table>
+
+        <div class="clearfix"></div>
+    </div>
+    <section id="form" class="form row">
+        <div class="left-container col-xs-12 col-md-7">
+            <div>
+                <h2 class="message-header">
+                    <br/>
+                    Jeśli jesteś zainteresowany naszą <strong>aplikacją</strong> wpisz swojego e-maila!
+                </h2>
+            </div>
             <form class="sign-up-form">
                 <label class="email-label">
-                    Email:
+                        <i class="glyphicon glyphicon-envelope email-icon"></i>
                     <input type="email" name="user-email" placeholder="jan.kowalski@gmail.com" required/>
                 </label>
-                <button class="submit-button"></button>
-            </form>
+                    <button type="submit" class="btn btn-default submit-button">Submit</button>
+                </form>
             <div class="security-text">
                 <p>Informujemy, że zostanie wysłany tylko jeden email z informacją o premierze.
-                    Prosimy regularnie sprawdzać e-mail!</p>
+                        Prosimy regularnie sprawdzać e-mail!</p>
                 <p>Wszelkie wysłane przez Państwa dane są chronione i nie zostaną użyte w celach niezwiązanych z
-                    premierą
-                    aplikacji CalcoFit.</p>
+                        premierą
+                        aplikacji CalcoFit.</p>
             </div>
         </div>
-        <aside class="contact-info">
-            <h4>Contact Information</h4>
-            <p class="address"><img src="png/location.png"/>Aleja Grunwaldzka 472B,<br/>80-309 Gdańsk</p>
-            <p class="phone-number"><span class="glyphicon glyphicon-phone"></span> +48 730 833 804</p>
-            <p class="email-address"><span class="glyphicon glyphicon-envelope"></span> calcofit@gmail.com</p>
-            <span class="glyphicon glyphicon-fullscreen background-icon"></span>
+        <aside class="contact-info col-xs-12 col-md-5">
+            <table class="contact-info-details">
+                <tr>
+                    <td class="col-xs-1"></td>
+                    <td class="col-xs-11">
+                        <h2>Contact Information</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-xs-1">
+                        <p class="glyphicon glyphicon-map-marker"></p>
+                    </td>
+                    <td class="col-xs-11">
+                        <div>
+                            Aleja Grunwaldzka 472B,
+                        </div>
+                        <div>
+                            80-309 Gdańsk
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-xs-1">
+                        <p class="glyphicon glyphicon-phone"></p>
+                    </td>
+                    <td class="col-xs-11">
+                        +48 730 833 804
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-xs-1">
+                        <p class="glyphicon glyphicon-envelope"></p>
+                    </td>
+                    <td class="col-xs-11">
+                        calcofit@gmail.com
+                    </td>
+                </tr>
+            </table>
+            <div class="clearfix"></div>
         </aside>
     </section>
-
-    <div class="members container" id="druzyna">
-        <div class="row logosy1 text-center">
-            <div class="col-xs-12 col-sm-4">
-                <figure><img src="faces/1.jpeg" class="img-rounded" alt="Piotr Zakrzewski" width="120" height="120">
-                </figure>
-            </div>
-            <div class="col-xs-12 col-sm-4">
-                <figure><img src="faces/2.jpeg" class="img-rounded" alt="Marcin Wiśniewski" width="120" height="120">
-                </figure>
-            </div>
-            <div class="col-xs-12 col-sm-4">
-                <figure><img src="faces/3.jpeg" class="img-rounded" alt="Dominik Dutkiewicz" width="120" height="120">
-                </figure>
-            </div>
-        </div>
+    <div class="social-media-buttons">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
     </div>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div>
-                    STOPKA
+        <div class="members container" id="druzyna">
+            <div class="row logosy1 text-center">
+                <div class="col-xs-12 col-sm-4">
+                    <figure><img src="faces/1.jpeg" class="img-rounded" alt="Piotr Zakrzewski" width="120" height="120">
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <figure><img src="faces/2.jpeg" class="img-rounded" alt="Marcin Wiśniewski" width="120"
+                                 height="120">
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <figure><img src="faces/3.jpeg" class="img-rounded" alt="Dominik Dutkiewicz" width="120"
+                                 height="120">
+                    </figure>
                 </div>
             </div>
         </div>
-    </footer>
-</div>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.localScroll.js"></script>
-<script src="js/jquery.scrollTo.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('#skroluj').localScroll({duration: 800});
-    });
-</script>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div>
+                        STOPKA
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.localScroll.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#skroluj').localScroll({duration: 800});
+        });
+    </script>
 </body>
 </html>
 
