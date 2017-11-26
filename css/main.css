@@ -1,5 +1,6 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    max-width: 1200px;
 }
 .navbar-default {
     background-color: #000000;
@@ -110,6 +111,7 @@ footer{
     resize: vertical;
     padding: 10px;
     background-color: black;
+    color: white;
 }
 
 .form {
@@ -190,8 +192,7 @@ footer{
 .submit-button {
     background: white;
     color: black;
-    border: 1px outset;
-    border-color: black;
+    border: 1px outset black;
     height: 45px;
     width: 100px;
     font: bold 15px arial, sans-serif;
@@ -201,16 +202,48 @@ footer{
 
 .product-details {
     color: white;
+    font-family: "Raleway", sans-serif;
 }
 
+.product-functions-title {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.product-details-height {
+    height: 128px;
+    line-height: 128px;
+    font-size: 30px;
+}
+
+.product-details-height > td  {
+    padding-left: 34px;
+    padding-bottom: 50px;
+    text-align: center;
+    display: inline-block;
+}
+.product-details-height img {
+    width: 110px;
+}
+
+.product-details-height:last-child {
+    text-align: left;
+}
 .glyphicon-envelope {
     padding: 0;
 }
 
-.address, .phone-number, .email-address {
-    clear: both;
+.social-media-buttons {
+    padding: 20px;
+    font-size: 38px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
-
+.fa {
+    color: white;
+}
 .article {
     background-image: url("../backgrounds-image.jpg");
     background-repeat: no-repeat;
