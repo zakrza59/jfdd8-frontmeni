@@ -8,138 +8,148 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
 
 </head>
 <body>
 <div class="article">
-</div>
 
-<nav class="navbar navbar-default  navbar-fixed-top">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <!--<a class="navbar-brand" href="#">CalcoFit</a>-->
-            <!--NAZWA OBOK LOGA patrz main.css.70-->
-            <a href="http://www.facebook.com">
-                <img id="logo" src="logo/logo-calc.png" alt="calcoFit logo">
-            </a>
+
+    <nav class="navbar navbar-default  navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand" href="#">CalcoFit</a>-->
+                <!--NAZWA OBOK LOGA patrz main.css.70-->
+                <a href="#HOME">
+                    <img id="logo" src="logo/LOGO_3.png" alt="calcoFit logo">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" id="skroluj">
+                    <li><a href="#HOME">HOME</a></li>
+                    <li><a href="#zajawa">ZAJAWA</a></li>
+                    <li><a href="#niewiem">NIE WIEM</a></li>
+                    <li><a href="#form">KONTAKT</a></li>
+                    <li><a href="#druzyna">POZNAJ NAS</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <header id="HOME">
+        <div class="container-fluid">
+            <div class="row">
+                <img src="png/header.jpg" class="img-responsive glowa">
+            </div>
+        </div>
+    </header>
+
+    <div class="zajawka container" id="zajawa">
+        <div class="row logosy text-center">
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <img src="png/1.png" class="img-circle" alt="waga" width="120" height="120">
+                <h2>Wylicz optymalną wagę</h2>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <img src="png/2.png" class="img-rounded" alt="serce" width="120" height="120">
+                <h2>Wiek vs trening</h2>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <img src="png/3.png" class="img-circle" alt="czas" width="120" height="120">
+                <h2>Czas ćwiczeń</h2>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <img src="png/4.png" class="img-circle" alt="kalorie" width="120" height="120">
+                <h2>Tabele kalorii</h2>
+            </div>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">CONTACT US</a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
-
-<header>
-    <div class="container-fluid">
-        <div class="row">
-            <img src="png/header.jpg" class="img-responsive glowa">
-        </div>
-    </div>
-</header>
-
-<div class="zajawka container">
-    <div class="row logosy text-center">
-        <div class="col-xs-12 col-sm-6 col-lg-3">
-            <img src="png/1.png" class="img-circle" alt="waga" width="120" height="120">
-            <h2>Wylicz optymalną wagę</h2>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-lg-3">
-            <img src="png/2.png" class="img-rounded" alt="serce" width="120" height="120">
-            <h2>Wiek vs trening</h2>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-lg-3">
-            <img src="png/3.png" class="img-circle" alt="czas" width="120" height="120">
-            <h2>Czas ćwiczeń</h2>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-lg-3">
-            <img src="png/4.png" class="img-circle" alt="kalorie" width="120" height="120">
-            <h2>Tabele kalorii</h2>
-        </div>
-    </div>
-
-</div>
-
-<div class="container">
-    <div class="starter-template row">
-        <p class="lead">Twój portal jako osobisty doradca.<br> Z nami będziesz<br>tutaj powstanie odniesienie do
-            formularza jak powstanie</p>
     </div>
 
-</div>
-
-<section id="form" class="form">
-    <div class="left-container">
-        <h2 class="message-header">
-            <br/>
-            Send us a Message <img src="png/email-icon.svg" alt="message-icon">
-        </h2>
-        <form class="sign-up-form">
-            <label class="email-label">
-                Email:
-                <input type="email" name="user-email" placeholder="jan.kowalski@gmail.com" required/>
-            </label>
-            <button class="submit-button"></button>
-        </form>
-        <div class="security-text">
-            <p>Informujemy, że zostanie wysłany tylko jeden email z informacją o premierze.
-                Prosimy regularnie sprawdzać e-mail!</p>
-            <p>Wszelkie wysłane przez Państwa dane są chronione i nie zostaną użyte w celach niezwiązanych z premierą
-                aplikacji CalcoFit.</p>
+    <div class="container" id="niewiem">
+        <div class="starter-template row">
+            <p class="lead">Twój portal jako osobisty doradca.<br> Z nami będziesz<br>tutaj powstanie odniesienie do
+                formularza jak powstanie</p>
         </div>
+
     </div>
-    <aside class="contact-info">
-        <h4>Contact Information</h4>
-        <p class="address"><img src="png/location.png" />Aleja Grunwaldzka 472B,<br/>80-309 Gdańsk</p>
-        <p class="phone-number"><span class="glyphicon glyphicon-phone"></span> +48 730 833 804</p>
-        <p class="email-address"><span class="glyphicon glyphicon-envelope"></span> calcofit@gmail.com</p>
-        <span class="glyphicon glyphicon-fullscreen background-icon"></span>
-    </aside>
-</section>
 
-<div class="members container">
-    <div class="row logosy1 text-center">
-        <div class="col-lg-4">
-            <img src="faces/1.jpeg" class="img-rounded" alt="Piotr Zakrzewski" width="120" height="120">
-            <h3>Piotr Zakrzewski</h3>
+    <section id="form" class="form">
+        <div class="left-container">
+            <h2 class="message-header">
+                <br/>
+                Send us a Message <img src="png/email-icon.svg" alt="message-icon">
+            </h2>
+            <form class="sign-up-form">
+                <label class="email-label">
+                    Email:
+                    <input type="email" name="user-email" placeholder="jan.kowalski@gmail.com" required/>
+                </label>
+                <button class="submit-button"></button>
+            </form>
+            <div class="security-text">
+                <p>Informujemy, że zostanie wysłany tylko jeden email z informacją o premierze.
+                    Prosimy regularnie sprawdzać e-mail!</p>
+                <p>Wszelkie wysłane przez Państwa dane są chronione i nie zostaną użyte w celach niezwiązanych z
+                    premierą
+                    aplikacji CalcoFit.</p>
+            </div>
         </div>
-        <div class="col-lg-4">
-            <img src="faces/2.jpeg" class="img-rounded" alt="Marcin Wiśniewski" width="120" height="120">
-            <h3>Marcin Wiśniewski</h3>
-        </div>
-        <div class="col-lg-4">
-            <img src="faces/3.jpeg" class="img-rounded" alt="Dominik Dutkiewicz" width="120" height="120">
-            <h3>Dominik Dutkiewicz</h3>
-        </div>
-    </div>
-</div>
+        <aside class="contact-info">
+            <h4>Contact Information</h4>
+            <p class="address"><img src="png/location.png"/>Aleja Grunwaldzka 472B,<br/>80-309 Gdańsk</p>
+            <p class="phone-number"><span class="glyphicon glyphicon-phone"></span> +48 730 833 804</p>
+            <p class="email-address"><span class="glyphicon glyphicon-envelope"></span> calcofit@gmail.com</p>
+            <span class="glyphicon glyphicon-fullscreen background-icon"></span>
+        </aside>
+    </section>
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <div>
-                STOPKA
+    <div class="members container" id="druzyna">
+        <div class="row logosy1 text-center">
+            <div class="col-xs-12 col-sm-4">
+                <figure><img src="faces/1.jpeg" class="img-rounded" alt="Piotr Zakrzewski" width="120" height="120">
+                </figure>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <figure><img src="faces/2.jpeg" class="img-rounded" alt="Marcin Wiśniewski" width="120" height="120">
+                </figure>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <figure><img src="faces/3.jpeg" class="img-rounded" alt="Dominik Dutkiewicz" width="120" height="120">
+                </figure>
             </div>
         </div>
     </div>
-</footer>
 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div>
+                    STOPKA
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.localScroll.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#skroluj').localScroll({duration: 800});
+    });
+</script>
 </body>
 </html>
 

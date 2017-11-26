@@ -1,5 +1,8 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 .navbar-default {
-    background-color: #0b1634;
+    background-color: #000000;
     border:0;
     padding:10px 0;
 }
@@ -9,13 +12,12 @@
 }
 .navbar-default .navbar-brand {
     color:white;
-    font-weight:bold;
 }
 .navbar-default .navbar-nav>li>a {
     color: rgb(255, 255, 255);
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: #07a7ff;
+    color: #00ffff;
 }
 .nav>li>a {
     padding:15px 10px;
@@ -67,13 +69,13 @@ header {
 
 #logo {
     width: 13%;
-    min-width: 120px;
+    min-width: 80px;
     max-width: 155px;
-    border-radius: 50%;
     float: left;
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 20px;
 }
 
 img.glowa {
@@ -178,7 +180,21 @@ footer{
 }
 
 .article {
-    background-image: url("../backgrounds-image.jpg");
+    background-image: url("/backgrounds-image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+/*kolor tla tylko do podgladu*/
+.article{
+    background: #d0cfd6;
+}
+
+figure img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;}
+figure:hover img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
 }
