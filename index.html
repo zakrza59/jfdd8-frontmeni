@@ -72,7 +72,6 @@
                 <h2>Tabele kalorii</h2>
             </div>
         </div>
-
     </div>
 
     <div class="container" id="niewiem">
@@ -83,27 +82,37 @@
 
     </div>
 
+    <div class="container-fluid product-extra-details">
+        <div class="row product-details">
+            <div class="col-xs-12">
+                <h2>Dzięki <strong>aplikacji</strong> możesz sprawdzić takie funkcje jak:</h2>
+            </div>
 
-    <div class="container extra-details">
-        <div class="row"></div>
-        <div class="col-xs-12 col-sm-6 col-lg-3">
-            <img src="#" class="img-circle" alt="" width="120" height="120">
-            <h3>Sprawdż kaloryczność produktów</h3>
+            <div class="col-xs-12">
+                <img src="png/apple.png" alt="apple image"><p>Wartości odżywcze produktów</p>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <img src="png/doughnut.png" alt="doughnut image"><p>vs</p><img src="png/fish.png" alt="fish image">
+            </div>
         </div>
+        <div class="clearfix"></div>
     </div>
 
-    <section id="form" class="form">
-        <div class="left-container">
-            <h2 class="message-header">
+    <section id="form" class="form row">
+        <div class="left-container col-xs-12 col-md-7">
+            <div>
+                <h2 class="message-header">
                     <br/>
-                Jeśli jesteś zainteresowany naszą <strong>aplikacją</strong> wpisz swojego e-maila!
-            </h2>
+                    Jeśli jesteś zainteresowany naszą <strong>aplikacją</strong> wpisz swojego e-maila!
+                </h2>
+            </div>
             <form class="sign-up-form">
                 <label class="email-label">
-                        Email:
+                        <i class="glyphicon glyphicon-envelope email-icon"></i>
                     <input type="email" name="user-email" placeholder="jan.kowalski@gmail.com" required/>
                 </label>
-                    <button class="submit-button"></button>
+                    <button type="submit" class="btn btn-default submit-button">Submit</button>
                 </form>
             <div class="security-text">
                 <p>Informujemy, że zostanie wysłany tylko jeden email z informacją o premierze.
@@ -113,14 +122,48 @@
                         aplikacji CalcoFit.</p>
             </div>
         </div>
-            <aside class="contact-info">
-                <h4>Contact Information</h4>
-                <p class="address"><img src="png/location.png"/>Aleja Grunwaldzka 472B,<br/>80-309 Gdańsk</p>
-                <p class="phone-number"><span class="glyphicon glyphicon-phone"></span> +48 730 833 804</p>
-                <p class="email-address"><span class="glyphicon glyphicon-envelope"></span> calcofit@gmail.com</p>
-                <span class="glyphicon glyphicon-fullscreen background-icon"></span>
-            </aside>
-        </section>
+        <aside class="contact-info col-xs-12 col-md-5">
+            <table class="contact-info-details">
+                <tr>
+                    <td class="col-xs-1"></td>
+                    <td class="col-xs-11">
+                        <h2>Contact Information</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-xs-1">
+                        <p class="glyphicon glyphicon-map-marker"></p>
+                    </td>
+                    <td class="col-xs-11">
+                        <div>
+                            Aleja Grunwaldzka 472B,
+                        </div>
+                        <div>
+                            80-309 Gdańsk
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-xs-1">
+                        <p class="glyphicon glyphicon-phone"></p>
+                    </td>
+                    <td class="col-xs-11">
+                        +48 730 833 804
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-xs-1">
+                        <p class="glyphicon glyphicon-envelope"></p>
+                    </td>
+                    <td class="col-xs-11">
+                        calcofit@gmail.com
+                    </td>
+                </tr>
+            </table>
+            <div class="clearfix"></div>
+        </aside>
+
+    </section>
 
         <div class="members container" id="druzyna">
             <div class="row logosy1 text-center">
