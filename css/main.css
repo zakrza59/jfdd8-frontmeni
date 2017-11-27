@@ -32,8 +32,8 @@ header {
 
 
 .zajawka .logosy {
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .logosy img:hover {
@@ -291,3 +291,22 @@ figure:hover img {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.lead {
+    color: white;
+    margin: auto;
+    pading: 10px;
+}
+.toitoi {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
