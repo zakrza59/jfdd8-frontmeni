@@ -1,6 +1,6 @@
 body{
     font-family: 'Montserrat', sans-serif;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
 }
 .navbar-default {
     background-color: #000000;
@@ -259,4 +259,9 @@ figure img {
 figure:hover img {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
+}
+
+.szerokosc {
+    max-width: 1200px;
+    margin: 0 auto;
 }
