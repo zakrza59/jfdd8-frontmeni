@@ -156,7 +156,7 @@ footer{
     flex-grow:1;
 }
 .contact-info p span {
-    color: #CFD8E0;
+    /*color: #CFD8E0;*/
     opacity: 0.6;
 }
 .security-text {
@@ -180,13 +180,9 @@ footer{
 }
 
 .article {
-    background-image: url("/backgrounds-image.jpg");
+    background-image: url("../backgrounds-image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
-/*kolor tla tylko do podgladu*/
-.article{
-    background: #d0cfd6;
 }
 
 figure img {
