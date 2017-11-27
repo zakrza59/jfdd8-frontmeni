@@ -244,18 +244,24 @@ footer{
 .fa {
     color: white;
 }
+
+.fa:hover {
+    opacity: 0.7;
+}
+
 .article {
     background-image: url("../backgrounds-image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-
 figure img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;}
+    transition: .3s ease-in-out;
+}
+
 figure:hover img {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
