@@ -249,6 +249,11 @@ footer{
     }
 }
 
+@media (max-width: 767px) {
+    .members {
+        padding-top: 40%;
+    }
+}
 .glyphicon-envelope {
     padding: 0;
 }
