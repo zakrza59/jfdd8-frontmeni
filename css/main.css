@@ -249,11 +249,18 @@ footer{
     }
 }
 
+@media (max-width: 415px) {
+    .product-details-height div:last-child {
+        font-size: 15px;
+    }
+}
+
 @media (max-width: 767px) {
     .members {
         padding-top: 260px;
     }
 }
+
 .glyphicon-envelope {
     padding: 0;
 }
