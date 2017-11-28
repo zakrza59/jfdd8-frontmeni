@@ -251,7 +251,7 @@ footer{
 
 @media (max-width: 767px) {
     .members {
-        padding-top: 40%;
+        padding-top: 260px;
     }
 }
 .glyphicon-envelope {
