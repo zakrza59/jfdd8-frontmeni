@@ -205,8 +205,9 @@ footer{
 }
 
 .product-details {
-    color: white;
+    color: #000000;
     font-family: "Raleway", sans-serif;
+    background: white;
 }
 
 .product-functions-title {
@@ -226,7 +227,8 @@ footer{
     display: inline-block;
 }
 .product-details-height img {
-    width: 95px;
+    width: 120px;
+    margin: 0 0 10% 0;
 }
 
 .product-details-height:last-child {
@@ -238,7 +240,7 @@ footer{
 }
 @media (max-width: 1288px) {
     .product-details-height div:last-child {
-        font-size: 20px;
+        font-size: 30px;
     }
 }
 /*@media (max-width: 992px) {*/
@@ -314,6 +316,7 @@ figure:hover img {
 
 .szerokosc {
     max-width: 1200px;
+    min-width: 300px;
     margin: 0 auto;
 }
 
