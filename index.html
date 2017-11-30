@@ -27,11 +27,11 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <!--<a class="navbar-brand" href="#">CalcoFit</a>-->
-                    <!--NAZWA OBOK LOGA patrz main.css.70-->
+                  <div id="logoskrol">
                     <a href="#HOME">
                         <img id="logo" src="png/LO.png" alt="calcoFit logo">
                     </a>
+                  </div>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -239,7 +239,7 @@
             </div>
 
             <footer>
-                <div class="back-top">
+                <div id="skroluj2" class="back-top">
                     <a href="#HOME">Back to top</a>
                 </div>
                 <div class="container modal-footer">
@@ -259,6 +259,8 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#skroluj').localScroll({duration: 800});
+            $('#skroluj2').localScroll({duration: 200});
+            $('#logoskrol').localScroll({duration: 400})
         });
     </script>
 </div>
