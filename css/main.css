@@ -3,7 +3,7 @@ body{
     /*max-width: 1200px;*/
 }
 .navbar-default {
-    background-color: #000000;
+    background-color: #ffffff;
     border:0;
     padding:10px 0;
 }
@@ -15,7 +15,7 @@ body{
     color:white;
 }
 .navbar-default .navbar-nav>li>a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
     color: #00ffff;
@@ -69,9 +69,7 @@ header {
 
 
 #logo {
-    width: 13%;
-    min-width: 80px;
-    max-width: 110px;
+    width: 230px;
     float: left;
     position: absolute;
     top: 0;
