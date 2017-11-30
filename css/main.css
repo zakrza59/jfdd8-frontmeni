@@ -2,8 +2,18 @@ body{
     font-family: 'Montserrat', sans-serif;
     /*max-width: 1200px;*/
 }
+
+#logo {
+    width: 230px;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+}
+
 .navbar-default {
-    background-color: #000000;
+    background-color: #ffffff;
     border:0;
     padding:10px 0;
 }
@@ -15,7 +25,7 @@ body{
     color:white;
 }
 .navbar-default .navbar-nav>li>a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
     color: #00ffff;
@@ -23,6 +33,7 @@ body{
 .nav>li>a {
     padding:15px 10px;
 }
+
 header {
     padding:0;
     max-width: 1200px;
@@ -65,18 +76,6 @@ header {
     padding-top: 30px;
     padding-bottom: 0;
     color: white;
-}
-
-
-#logo {
-    width: 13%;
-    min-width: 80px;
-    max-width: 110px;
-    float: left;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 20px;
 }
 
 img.glowa {
