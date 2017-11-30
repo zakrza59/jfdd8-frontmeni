@@ -1,6 +1,5 @@
 body{
     font-family: 'Montserrat', sans-serif;
-    /*max-width: 1200px;*/
 }
 
 #logo {
@@ -38,8 +37,8 @@ body{
 
 header {
     padding:0;
-    max-width: 1200px;
     margin: auto;
+    background: #000000;
 }
 
 
@@ -47,6 +46,8 @@ header {
 .zajawka .logosy {
     padding-top: 2%;
     padding-bottom: 2%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logosy img:hover {
@@ -69,15 +70,16 @@ header {
 }
 
 .zajawka {
-    width: 100%;
-    color: white;
+    color: black;
+    background: white;
+    padding:5% 0;
 }
 
 .members {
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 0;
     color: white;
+    font-family: "Raleway", sans-serif;
+    background: #000000;
+    padding: 5% 0;
 }
 
 img.glowa {
@@ -207,10 +209,16 @@ footer{
 }
 
 .product-details {
-    color: white;
+    color: #000000;
     font-family: "Raleway", sans-serif;
+    background: white;
+    padding: 5% 0;
+
 }
 
+.product-1200 {
+max-width: 1200px;
+}
 .product-functions-title {
     padding-bottom: 40px;
     text-align: center;
@@ -219,6 +227,7 @@ footer{
 .product-details-height {
     line-height: 128px;
     font-size: 30px;
+    padding-bottom: 5%;
 }
 
 .product-details-height > td  {
@@ -228,7 +237,7 @@ footer{
     display: inline-block;
 }
 .product-details-height img {
-    width: 95px;
+    width: 150px;
 }
 
 .product-details-height:last-child {
@@ -302,10 +311,6 @@ footer{
     background-size: cover;
 }
 
-.szerokosc {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 .lead {
     color: white;
@@ -318,6 +323,8 @@ footer{
     color: white;
     font-size: 4vw;
     font-family: "Raleway", sans-serif bold;
+    max-width: 1200px;
+    margin:0 auto;
 }
 
 .centered {
@@ -327,3 +334,30 @@ footer{
     transform: translate(-50%, -50%);
 }
 
+#team-space {
+    padding-bottom: 100px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.centruj {
+    text-align: center;
+}
+
+#niewiem {
+    background: black;
+    padding: 5% 0;
+}
+
+.starter-template {
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
