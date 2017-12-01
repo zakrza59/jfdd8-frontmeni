@@ -82,6 +82,10 @@ header {
     padding: 5% 0;
 }
 
+.members-photos {
+    margin: 0;
+}
+
 img.glowa {
     padding-top: 70px;
 }
@@ -107,7 +111,6 @@ footer{
     font-weight: normal;
 }
 
-
 .email-icon {
     color: white;
 }
@@ -126,7 +129,6 @@ footer{
 .form {
     margin: 0 auto;
     max-width: 1200px;
-
 }
 
 .form>div, .form>aside {
@@ -137,6 +139,7 @@ footer{
     text-align: center;
     font-size: 20px;
 }
+
 .message-header {
     font-size: 30px;
     max-width: 600px;
@@ -159,6 +162,7 @@ footer{
     overflow: hidden;
     font-family: "Raleway", sans-serif;
 }
+
 .contact-info > span.background-icon{
     position: absolute;
     right: -10px;
@@ -221,6 +225,7 @@ footer{
 .product-1200 {
 max-width: 1200px;
 }
+
 .product-functions-title {
     padding-bottom: 40px;
     text-align: center;
@@ -238,6 +243,7 @@ max-width: 1200px;
     text-align: center;
     display: inline-block;
 }
+
 .product-details-height img {
     width: 150px;
 }
@@ -249,15 +255,16 @@ max-width: 1200px;
 .product-details-height div:last-child {
     white-space: nowrap;
 }
+
 @media (max-width: 1288px) {
     .product-details-height div:last-child {
         font-size: 20px;
     }
 }
-/*@media (max-width: 992px) {*/
-    .product-details-height div:last-child {
-        text-align: center;
-    }
+
+.product-details-height div:last-child {
+    text-align: center;
+}
 
 
 @media (max-width: 415px) {
