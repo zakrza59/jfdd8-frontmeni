@@ -15,7 +15,6 @@ body{
     background-color: #ffffff;
     border:0;
     padding:10px 0;
-    max-width: 1200px;
     margin:0 auto;
 }
 .navbar {
@@ -132,7 +131,6 @@ footer{
 
 .form {
     margin: 0 auto;
-    max-width: 1200px;
 }
 
 .form>div, .form>aside {
@@ -152,6 +150,10 @@ footer{
     padding: 0;
     margin: 0 0 20px;
     display: inline-block;
+}
+
+.contact-section {
+    padding: 0;
 }
 
 .contact-info h4 {
@@ -257,17 +259,19 @@ max-width: 1200px;
 }
 
 .product-details-height div:last-child {
-    white-space: nowrap;
+    line-height: 2;
 }
 
 @media (max-width: 1288px) {
     .product-details-height div:last-child {
-        font-size: 20px;
+        font-size: 32px;
+        font-weight: bold;
     }
 }
 
 .product-details-height div:last-child {
     text-align: center;
+    padding-bottom: 40px;
 }
 
 
