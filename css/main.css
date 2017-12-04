@@ -28,7 +28,7 @@ body{
 .navbar-default .navbar-nav>li>a {
     color: rgb(0, 0, 0);
 }
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:hover {
     color: #00ffff;
 }
 .nav>li>a {
@@ -377,4 +377,5 @@ h3 {
 .social {
     text-align: center;
     font-size: 3em;
-    margin-top: 10px
+    margin-top: 10px}
+
