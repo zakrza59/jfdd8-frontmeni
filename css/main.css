@@ -99,10 +99,12 @@ footer{
 
 .center{
     text-align: center;
+    padding-top: 8%;
 }
 
 .left{
     text-align: left;
+    padding-top: 11%;
 }
 
 .email-label {
@@ -379,3 +381,8 @@ h3 {
     font-size: 3em;
     margin-top: 10px}
 
+.przerywnik {
+    height: 20px;
+    width: auto
+;
+}
