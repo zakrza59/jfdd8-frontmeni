@@ -384,6 +384,7 @@ h3 {
 
 #facebook {
     color: #3B5998;
+    padding-right: 20px;
 }
 
 #github {
@@ -392,4 +393,5 @@ h3 {
 
 #linkedin {
     color: #0077B5;
+    padding-left: 20px;
 }
