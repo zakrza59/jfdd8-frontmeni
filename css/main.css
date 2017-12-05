@@ -93,6 +93,11 @@ img.glowa {
     padding-top: 70px;
 }
 
+.parallax {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 footer{
     background: #ffffff;
 }
@@ -274,6 +279,18 @@ max-width: 1200px;
 @media (max-width: 415px) {
     .product-details-height div:last-child {
         font-size: 33px;
+    }
+}
+@media (max-width: 340px) {
+    #markethero-submit-form-email {
+        font-size: 17px;
+    }
+    .contact-info {
+        font-size: 17px;
+    }
+    .submit-button {
+        height: 40px;
+        width: 90px;
     }
 }
 
