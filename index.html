@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:height="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,9 +54,9 @@
         </div>
     </header>
     <!--LOGA Z GŁÓWNYI FICZERAMI-->
-    <div class="zajawka container-fluid" id="zajawa">
+    <div class="zajawka container-fluid">
         <div class="row logosy text-center">
-            <div class="col-xs-12 col-sm-6 col-lg-3">
+            <div id="zajawa" class="col-xs-12 col-sm-6 col-lg-3">
                 <img src="png/1.png" alt="waga" width="200" height="200">
                 <h2>Calculate weight</h2>
             </div>
@@ -86,10 +86,12 @@
         </div>
 
     </div>
+
+
     <!--LOGA Z SZCZEGÓŁOWYMI FICZERAMI-->
-    <div id="funkcje" class="container-fluid product-details">
+    <div class="container-fluid product-details">
         <div class="container-fluid product-1200">
-            <div class="col-xs-12 product-functions-title">
+            <div id="funkcje" class="col-xs-12 product-functions-title">
                 <h2>With our <strong>aplication</strong> you have access to many awesome functions!</h2>
             </div>
             <div class="row product-details-height ">
@@ -131,31 +133,55 @@
         </div>
     </div>
     <!--DRUŻYNA/MY/MORDY/TEAM-->
-    <div class="members container-fluid" id="druzyna">
-        <div class="container product-1200">
+
+    <div class="members container-fluid">
+        <div id="druzyna" class="container product-1200">
             <div id='team-space' class="col-xs-12 product-functions-title">
                 <h2><strong>Meet our team</strong></h2>
             </div>
             <div class="col-xs-12 col-md-4 centruj">
-                <figure class="members-photos"><img src="faces/1.jpeg" class="img-rounded" alt="Piotr Zakrzewski" width="200"
-                             height="200">
-                </figure>
-                <h3 class="centruj">Piotr Zakrzewski</h3>
-
-            </div>
-            <div class="col-xs-12 col-md-4 centruj">
-                <figure class="members-photos"><img src="faces/2.jpeg" class="img-rounded" alt="Marcin Wiśniewski" width="200"
-                             height="200">
-                </figure>
-                <h3 class="centruj">Marcin Wiśniewski</h3>
-
-            </div>
-            <div class="col-xs-12 col-md-4 centruj">
-                <figure class="members-photos"><img src="faces/4.jpeg" class="img-rounded" alt="Dominik Dutkiewicz" width="200"
-                             height="200">
-                </figure>
                 <h3 class="centruj">Dominik Dutkiewicz</h3>
+                <figure class="members-photos"><img src="faces/1.jpeg" class="img-rounded" alt="Marcin Wiśniewski"
+                                                    width="270"
+                                                    height="270">
 
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/piotr.zakrzewski.14"><i id="facebook"
+                                                                                  class="fa fa-facebook"></i></a>
+                        <a href="https://github.com/zakrza59"><i id="github" class="fa fa-github"></i></a>
+                        <a href="https://www.facebook.com/piotr.zakrzewski.14"><i id="linkedin"
+                                                                                  class="fa fa-linkedin"></i></a></div>
+
+            </div>
+            <div class="col-xs-12 col-md-4 centruj">
+                <h3 class="centruj">Marcin Wiśniewski</h3>
+                <figure class="members-photos"><img src="faces/2.jpeg" class="img-rounded" alt="Marcin Wiśniewski"
+                                                    width="270"
+                                                    height="270">
+
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/piotr.zakrzewski.14"><i id="facebook"
+                                                                                  class="fa fa-facebook"></i></a>
+                        <a href="https://github.com/zakrza59"><i id="github" class="fa fa-github"></i></a>
+                        <a href="https://www.facebook.com/piotr.zakrzewski.14"><i id="linkedin"
+                                                                                  class="fa fa-linkedin"></i></a></div>
+            </div>
+            <div class="col-xs-12 col-md-4 centruj">
+                <h3 class="centruj">Piotr Zakrzewski</h3>
+                <figure class="members-photos"><img src="faces/3.jpeg" class="img-rounded" alt="Marcin Wiśniewski"
+                                                    width="270"
+                                                    height="270">
+
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/piotr.zakrzewski.14"><i id="facebook"
+                                                                                  class="fa fa-facebook"></i></a>
+                        <a href="https://github.com/zakrza59"><i id="github" class="fa fa-github"></i></a>
+                        <a href="https://www.facebook.com/piotr.zakrzewski.14"><i id="linkedin"
+                                                                                  class="fa fa-linkedin"></i></a>
+                    </div>
             </div>
         </div>
     </div>
@@ -169,10 +195,12 @@
                         If you're interested in our <strong>aplication</strong> type your email below!
                     </h3>
                 </div>
-                <form class="sign-up-form">
+                <form class="sign-up-form" id="markethero-form"
+                      action="//app.markethero.io/public/optin/9baf70c5b5c55b9124bdd922173da79ea99630f0ed7effb767d06e7929bd5600/f889bb00-1d16-41b1-b3f9-0ba8b8596e68/subscribe"
+                      method="post">
                     <label class="email-label">
                         <i class="glyphicon glyphicon-envelope email-icon"></i>
-                        <input type="email" name="user-email" placeholder="Enter your email address" required/>
+                        <input id="markethero-submit-form-email" type="email" name="email" tabindex="0" placeholder="Enter your email address" required/>
                     </label>
                     <button type="submit" class="btn btn-default submit-button">Submit</button>
                 </form>
@@ -223,28 +251,22 @@
                 </table>
                 <div class="clearfix"></div>
             </aside>
-
-            <!--SOCIAL GUZIKI-->
-            <div class="social-media-buttons">
-                <a href="http://www.facebook.com" class="fa fa-facebook"></a>
-                <a href="http://www.twitter.com" class="fa fa-twitter"></a>
-                <a href="http://www.instagram.com" class="fa fa-instagram"></a>
-            </div>
-            <!--STOPKA-->
-            <footer>
-                <div id="skroluj2" class="back-top">
-                    <a href="#HOME">Back to top</a>
-                </div>
-                <div class="container modal-footer">
-                    <div class="row">
-                        <div>
-                            <span class="copyright-footer">&#169; All rights reserved by Frontmeni 2017</span>
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </section>
     </div>
+
+    <!--STOPKA-->
+    <footer>
+        <div id="skroluj2" class="back-top">
+            <a href="#HOME">Back to top</a>
+        </div>
+        <div class="container modal-footer">
+            <div class="row">
+                <div>
+                    <span class="copyright-footer">&#169; All rights reserved by Frontmeni 2017</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -253,10 +275,60 @@
 <!--SKRYPT NA SKROLA-->
 <script type="text/javascript">
     $(document).ready(function () {
-        $('#skroluj').localScroll({duration: 800});
+//        $('#skroluj').localScroll({duration: 800});
         $('#skroluj2').localScroll({duration: 200});
         $('#logoskrol').localScroll({duration: 400})
     });
+    //    SKRYPT NA ZAMYKANIE MENU
+    $(document).on('click', function () {
+        return $('.collapse').collapse('hide');
+    });
+    //SKRYP NA ŚLEDZENIE MENU
+    jQuery(document).ready(function (jQuery) {
+        var topMenu = jQuery(".navbar-collapse"),
+            offset = 40,
+            topMenuHeight = topMenu.outerHeight() + offset,
+            // All list items
+            menuItems = topMenu.find('a[href*="#"]'),
+            // Anchors corresponding to menu items
+            scrollItems = menuItems.map(function () {
+                var href = jQuery(this).attr("href"),
+                    id = href.substring(href.indexOf('#')),
+                    item = jQuery(id);
+                //console.log(item)
+                if (item.length) {
+                    return item;
+                }
+            });
+        // so we can get a fancy scroll animation
+        menuItems.click(function (e) {
+            var href = jQuery(this).attr("href"),
+                id = href.substring(href.indexOf('#'));
+            offsetTop = href === "#" ? 0 : jQuery(id).offset().top - topMenuHeight + 1;
+            jQuery('html, body').stop().animate({
+                scrollTop: offsetTop
+            }, 300);
+            e.preventDefault();
+        });
+        // Bind to scroll
+        jQuery(window).scroll(function () {
+            // Get container scroll position
+            var fromTop = jQuery(this).scrollTop() + topMenuHeight;
+            // Get id of current scroll item
+            var cur = scrollItems.map(function () {
+                if (jQuery(this).offset().top < fromTop)
+                    return this;
+            });
+            // Get the id of the current element
+            cur = cur[cur.length - 1];
+            var id = cur && cur.length ? cur[0].id : "";
+            menuItems.parent().removeClass("active");
+            if (id) {
+                menuItems.parent().end().filter("[href*='#" + id + "']").parent().addClass("active");
+            }
+        })
+    })
+
 </script>
 </body>
 </html>
