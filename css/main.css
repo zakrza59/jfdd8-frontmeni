@@ -28,7 +28,7 @@ body{
 .navbar-default .navbar-nav>li>a {
     color: rgb(0, 0, 0);
 }
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:hover {
     color: #00ffff;
 }
 .nav>li>a {
@@ -99,10 +99,12 @@ footer{
 
 .center{
     text-align: center;
+    padding-top: 8%;
 }
 
 .left{
     text-align: left;
+    padding-top: 11%;
 }
 
 .email-label {
@@ -130,6 +132,8 @@ footer{
 
 .form {
     margin: 0 auto;
+    max-width: 1200px;
+    padding: 5% 0;
 }
 
 .form>div, .form>aside {
@@ -285,13 +289,6 @@ max-width: 1200px;
     text-decoration: none;
     display: inline-block;
 }
-.fa {
-    color: white;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
 
 .copyright-footer {
     color: #202020;
@@ -357,6 +354,7 @@ h3 {
 
 .centruj {
     text-align: center;
+    margin-bottom:20px;
 }
 
 #niewiem {
@@ -373,4 +371,18 @@ h3 {
 
 .modal-footer {
     padding:0;
+}
+
+
+/*SOCIAL BUTTONY*/
+
+.social {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 10px}
+
+.przerywnik {
+    height: 20px;
+    width: auto
+;
 }
