@@ -1,5 +1,11 @@
 img {
-   margin: auto;
-    display: block;
-
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.imgage {
+    z-index: 1;
+}
+.sztanga {
+    z-index: 2;
 }
