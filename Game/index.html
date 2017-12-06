@@ -25,8 +25,8 @@
         setInterval(function () {
             pos = Math.min(60, pos + 3);
            movement.stop().animate({
-               marginTop: pos
-           })
+               marginTop: pos,
+           },'fast')
         }, 100);
 
         $(window).click(function () {
@@ -37,6 +37,26 @@
             })
         })
     })
+
+    var PresHit = 5;
+    if (guy.Pressed === true) {
+        guy.lift = guy.lift + guy.speed * PresHit;
+    } else {
+        guy.speed = Math.max(0, guy.speed + guy.speed * guy.unlift * PresHit);
+    }
+
+    guy.armRange = guy.distance + guy.speed * PresHit;
+
+    function guy() {
+        this.speed = 0;
+        this.distance = 0;
+        this.gasPressed = false;
+        this.acceleration = acceleration;
+        this.deceleration = -1;
+        this.node = $('<div>').addClass(className);
+        this.accelerationKeyCode = accelerationKeyCode;
+    }
+
 </script>
 </body>
 </html>
