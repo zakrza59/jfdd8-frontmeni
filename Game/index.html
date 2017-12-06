@@ -13,6 +13,30 @@
  <img src="sztanga.png" alt="sztanga">
 </div>
 
+<div class="arm"></div>
 
+<script src="../js/jquery.min.js"></script>
+<script>
+
+    $(function () {
+        var movement = $('.sztanga img');
+        var pos = 60;
+
+        setInterval(function () {
+            pos = Math.min(60, pos + 3);
+           movement.stop().animate({
+               marginTop: pos
+           })
+        }, 100);
+
+        $(window).click(function () {
+            pos = Math.max(0, pos - 15);
+
+            movement.stop().animate({
+                marginTop: pos
+            })
+        })
+    })
+</script>
 </body>
 </html>
