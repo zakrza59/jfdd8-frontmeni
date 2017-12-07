@@ -95,6 +95,18 @@ img.glowa {
     padding-top: 70px;
 }
 
+.parallax {
+    padding-left: 0;
+    padding-right: 0;
+    height: 843px;
+    background: url("../parallax/parallax.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 70px;
+    width: 100%;
+
+}
+
 footer{
     background: #ffffff;
 }
@@ -218,8 +230,8 @@ footer{
 }
 
 .submit-button {
-    background: #0077b5;
-    color: black;
+    background: black;
+    color: white;
     border: 1px outset black;
     height: 45px;
     width: 100px;
@@ -281,6 +293,18 @@ max-width: 1200px;
 @media (max-width: 415px) {
     .product-details-height div:last-child {
         font-size: 33px;
+    }
+}
+@media (max-width: 340px) {
+    #markethero-submit-form-email {
+        font-size: 17px;
+    }
+    .contact-info {
+        font-size: 17px;
+    }
+    .submit-button {
+        height: 40px;
+        width: 90px;
     }
 }
 
