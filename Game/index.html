@@ -23,18 +23,26 @@
         var pos = 60;
 
         setInterval(function () {
-            pos = Math.min(60, pos + 3);
+            pos = Math.min(50, pos + 3);
            movement.stop().animate({
                marginTop: pos,
            },'fast')
         }, 100);
 
-        $(window).click(function () {
-            pos = Math.max(0, pos - 15);
 
+//        $(window).click(function () {
+//            pos = Math.max(0, pos - 15);
+//
+//            movement.stop().animate({
+//                marginTop: pos
+//            })
+        $(window).on('keyup',function(move){
+               (move.keycode = 32); {
+            pos = Math.max(0, pos -15);
             movement.stop().animate({
-                marginTop: pos
+                marginTop:pos
             })
+            }
         })
     })
 
