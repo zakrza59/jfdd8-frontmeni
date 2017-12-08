@@ -5,6 +5,14 @@
     <title>Gra</title>
     <link rel="stylesheet" type="text/css" href="game.css">
     <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
         .game {
             width: 493px;
             height: 253px;
@@ -14,9 +22,11 @@
         .bench {
             background: url('rdy-to-css.png');
         }
+
         .weight {
             background: url('sztanga.png');
         }
+
         .bench, .weight {
             position: absolute;
             top: 0;
@@ -27,16 +37,34 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        .score {
+            font-size: 34px;
+        }
+        .Scoreboard {
+            font-size: 30px;
+        }
     </style>
 </head>
 <body>
-
+<div id="Scoreboard">Bench Presses Score:
+    <div class="score">0</div>
+</div>
 <div class="game">
     <div class="bench">
 
     </div>
     <div class="weight">
 
+    </div>
+</div>
+<div id="legend">
+    <div class="description">
+        <ul>
+            <li>Press "Space Bar" to start benching.</li>
+            <li>Score when your arms are almost straight.</li>
+            <li>Remember to wait till bar is below the handler, then score again.</li>
+
+        </ul>
     </div>
 </div>
 
@@ -46,48 +74,41 @@
     $(function () {
         var movement = $('.weight');
         var pos = 60;
+        var score = 0;
+        var gameInterval;
+        var scored = false;
 
-        setInterval(function () {
-            pos = Math.min(60, pos + 3);
-           movement.stop().animate({
-               backgroundPositionY: pos
-           },'fast')
+
+        gameInterval = setInterval(function (P) {
+            pos = Math.min(60, pos + 2);
+            if (pos === 50) {
+                scored = false
+            }
+            movement.stop().animate({
+                backgroundPositionY: pos
+            }, 'fast')
         }, 100);
 
-
-//        $(window).click(function () {
-//            pos = Math.max(0, pos - 15);
-//            movement.stop().animate({
-//                marginTop: pos
-//            })
-        $(window).on('keyup',function(move){
-               (move.keycode = 32); {
-            pos = Math.max(0, pos -15);
-            movement.stop().animate({
-                backgroundPositionY:pos
-            })
+        $(window).on('keyup', function (move) {
+            (move.keycode = 32);
+            {
+                pos = Math.max(0, pos - 15);
+                movement.stop().animate({
+                    backgroundPositionY: pos
+                })
             }
-        })
-    })
+            if (pos < 1 && !scored) {
+                updateScore(1);
+            }
+        });
 
-    var PresHit = 5;
-    if (guy.Pressed === true) {
-        guy.lift = guy.lift + guy.speed * PresHit;
-    } else {
-        guy.speed = Math.max(0, guy.speed + guy.speed * guy.unlift * PresHit);
-    }
+        function updateScore(result) {
+            score += result;
+            $('.score').text(score);
+            scored = true;
+        }
+    });
 
-    guy.armRange = guy.distance + guy.speed * PresHit;
-
-    function guy() {
-        this.speed = 0;
-        this.distance = 0;
-        this.gasPressed = false;
-        this.acceleration = acceleration;
-        this.deceleration = -1;
-        this.node = $('<div>').addClass(className);
-        this.accelerationKeyCode = accelerationKeyCode;
-    }
 
 </script>
 </body>
