@@ -5,12 +5,16 @@
     <title>Gra</title>
     <link rel="stylesheet" type="text/css" href="game.css">
     <style>
-        body {
+        #playgame {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
+            /*background: url('fitness-background-images-005.jpg');*/
+            /*background-size: cover;*/
+            /*width: 100%;*/
+
         }
 
         .game {
@@ -37,37 +41,48 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+
         .score {
             font-size: 34px;
         }
+
         .Scoreboard {
             font-size: 30px;
+        }
+
+        .barki {
+            z-index: 2;
+
         }
     </style>
 </head>
 <body>
-<div id="Scoreboard">Bench Presses Score:
-    <div class="score">0</div>
-</div>
-<div class="game">
-    <div class="bench">
-
+<div id="playgame">
+    <div id="Scoreboard">Bench Presses Score:
+        <div class="score">0</div>
     </div>
-    <div class="weight">
+    <div class="game">
+        <div class="bench">
 
+        </div>
+        <div class="weight">
+
+        </div>
+        <div class="barki">
+
+        </div>
+    </div>
+    <div id="legend">
+        <div class="description">
+            <ul>
+                <li>Press "Space Bar" to start benching.</li>
+                <li>Score when your arms are almost straight.</li>
+                <li>Remember to wait till bar is below the handler, then score again.</li>
+
+            </ul>
+        </div>
     </div>
 </div>
-<div id="legend">
-    <div class="description">
-        <ul>
-            <li>Press "Space Bar" to start benching.</li>
-            <li>Score when your arms are almost straight.</li>
-            <li>Remember to wait till bar is below the handler, then score again.</li>
-
-        </ul>
-    </div>
-</div>
-
 <script src="../js/jquery.min.js"></script>
 <script>
 
