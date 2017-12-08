@@ -4,35 +4,59 @@
     <meta charset="UTF-8">
     <title>Gra</title>
     <link rel="stylesheet" type="text/css" href="game.css">
+    <style>
+        .game {
+            width: 493px;
+            height: 253px;
+            position: relative;
+        }
+
+        .bench {
+            background: url('rdy-to-css.png');
+        }
+        .weight {
+            background: url('sztanga.png');
+        }
+        .bench, .weight {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
-<div class="image">
-    <img src="rdy-to-css.png" alt="Podstawowe-tlo-do-gry">
-</div>
-<div class="sztanga">
- <img src="sztanga.png" alt="sztanga">
-</div>
 
-<div class="arm"></div>
+<div class="game">
+    <div class="bench">
+
+    </div>
+    <div class="weight">
+
+    </div>
+</div>
 
 <script src="../js/jquery.min.js"></script>
 <script>
 
     $(function () {
-        var movement = $('.sztanga img');
+        var movement = $('.weight');
         var pos = 60;
 
         setInterval(function () {
-            pos = Math.min(50, pos + 3);
+            pos = Math.min(60, pos + 3);
            movement.stop().animate({
-               marginTop: pos,
+               backgroundPositionY: pos
            },'fast')
         }, 100);
 
 
 //        $(window).click(function () {
 //            pos = Math.max(0, pos - 15);
-//
 //            movement.stop().animate({
 //                marginTop: pos
 //            })
@@ -40,7 +64,7 @@
                (move.keycode = 32); {
             pos = Math.max(0, pos -15);
             movement.stop().animate({
-                marginTop:pos
+                backgroundPositionY:pos
             })
             }
         })
