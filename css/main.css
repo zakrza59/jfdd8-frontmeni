@@ -95,18 +95,6 @@ img.glowa {
     padding-top: 70px;
 }
 
-/*.parallax {*/
-    /*padding-left: 0;*/
-    /*padding-right: 0;*/
-    /*height: 843px;*/
-    /*background: url("../parallax/parallax.jpg");*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    /*background-position-y: 70px;*/
-    /*width: 100%;*/
-
-/*}*/
-
 footer{
     background: #ffffff;
 }
@@ -291,6 +279,9 @@ max-width: 1200px;
 
 
 @media (max-width: 415px) {
+    .centered.toitoi {
+        font-size: 40px;
+    }
     .product-details-height div:last-child {
         font-size: 33px;
     }
@@ -341,9 +332,6 @@ max-width: 1200px;
 }
 
 .article {
-    /*background-image: url("../backgrounds-image.jpg");*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
     font-family: "Raleway", sans-serif;
 }
 
@@ -355,7 +343,7 @@ max-width: 1200px;
 .toitoi {
     text-align: center;
     color: white;
-    font-size: 6vw;
+    font-size: 60px;
     max-width: 1200px;
     margin:0 auto;
     z-index: 100;
