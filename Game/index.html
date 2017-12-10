@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Gra</title>
-    <link rel="stylesheet" type="text/css" href="game.css">
     <style>
         #playgame {
             display: flex;
@@ -11,11 +8,15 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            /*background: url('fitness-background-images-005.jpg');*/
-            /*background-size: cover;*/
-            /*width: 100%;*/
-
         }
+        .all {
+            background: url('background.jpg');
+            background-size: cover;
+            width: 100%;
+            height: auto;
+            position: absolute;
+        }
+
 
         .game {
             width: 493px;
@@ -25,6 +26,7 @@
 
         .bench {
             background: url('rdy-to-css.png');
+
         }
 
         .weight {
@@ -42,11 +44,12 @@
             background-size: cover;
         }
 
+
         .score {
             font-size: 34px;
         }
 
-        .Scoreboard {
+        #Scoreboard {
             font-size: 30px;
         }
 
@@ -55,31 +58,36 @@
 
         }
     </style>
+    <meta charset="UTF-8">
+    <title>Gra</title>
+    <link rel="stylesheet" type="text/css" href="game.css">
 </head>
 <body>
-<div id="playgame">
-    <div id="Scoreboard">Bench Presses Score:
-        <div class="score">0</div>
-    </div>
-    <div class="game">
-        <div class="bench">
-
+<div class="all">
+    <div id="playgame">
+        <div id="Scoreboard">Bench Presses Score:
+            <div class="score">0</div>
         </div>
-        <div class="weight">
+        <div class="game">
+            <div class="bench">
 
+            </div>
+            <div class="weight">
+
+            </div>
+            <div class="barki">
+
+            </div>
         </div>
-        <div class="barki">
+        <div id="legend">
+            <div class="description">
+                <ul>
+                    <li>Press "Space Bar" to start benching.</li>
+                    <li>Score when your arms are almost straight.</li>
+                    <li>Remember to wait till bar is below the handler, then score again.</li>
 
-        </div>
-    </div>
-    <div id="legend">
-        <div class="description">
-            <ul>
-                <li>Press "Space Bar" to start benching.</li>
-                <li>Score when your arms are almost straight.</li>
-                <li>Remember to wait till bar is below the handler, then score again.</li>
-
-            </ul>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
