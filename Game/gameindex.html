@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #playgame {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .all {
+            background: url('background.png');
+            background-size: cover;
+            width: 100%;
+            height: auto;
+            position: absolute;
+        }
+
+        .game {
+            width: 493px;
+            height: 253px;
+            position: relative;
+        }
+
+        .bench {
+            background: url('rdy-to-css.png');
+
+        }
+
+        .weight {
+            background: url('sztanga.png');
+        }
+
+        .bench, .weight {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        .score {
+            font-size: 34px;
+        }
+
+        #Scoreboard {
+            font-size: 30px;
+        }
+
+        .barki {
+            z-index: 2;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Gra</title>
+    <link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+<div class="all">
+    <div id="playgame">
+        <div id="Scoreboard">Bench Presses Score:
+            <div class="score">0</div>
+        </div>
+        <div class="game">
+            <div class="bench">
+
+            </div>
+            <div class="weight">
+
+            </div>
+            <div class="barki">
+
+            </div>
+        </div>
+        <div id="legend">
+            <div class="description">
+                <ul>
+                    <li>Press "Space Bar" to start benching.</li>
+                    <li>Score when your arms are almost straight.</li>
+                    <li>Remember to wait till bar is below the handler, then score again.</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery.min.js"></script>
+<script>
+
+    $(function () {
+        var movement = $('.weight');
+        var pos = 60;
+        var score = 0;
+        var gameInterval;
+        var scored = false;
+
+
+        gameInterval = setInterval(function (P) {
+            pos = Math.min(60, pos + 2);
+            if (pos === 50) {
+                scored = false
+            }
+            movement.stop().animate({
+                backgroundPositionY: pos
+            }, 'fast')
+        }, 100);
+
+        $(window).on('keyup', function (move) {
+            (move.keycode = 32);
+            {
+                pos = Math.max(0, pos - 15);
+                movement.stop().animate({
+                    backgroundPositionY: pos
+                })
+            }
+            if (pos < 1 && !scored) {
+                updateScore(1);
+            }
+        });
+
+        function updateScore(result) {
+            score += result;
+            $('.score').text(score);
+            scored = true;
+        }
+    });
+
+
+</script>
+</body>
+</html>
