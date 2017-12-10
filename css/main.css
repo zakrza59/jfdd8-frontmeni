@@ -89,11 +89,27 @@ header {
     margin: 0;
 }
 
+.members-photos > img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+
+}
+
+.members-photos:hover > img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+
+}
+
 .member-photo {
     max-height: 413px;
     width: 80%;
     min-width: 200px;
 }
+
+
 
 @media (max-width: 992px) {
     .member-photo {
