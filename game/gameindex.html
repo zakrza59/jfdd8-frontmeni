@@ -11,16 +11,19 @@
         }
         .all {
             background: url('background.png');
-            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
             width: 100%;
             height: auto;
             position: absolute;
+            min-widht: 1000px;
         }
 
         .game {
             width: 493px;
             height: 253px;
-            position: relative;
+            position: absolute;
+            margin: 100px 70px 0 0;
         }
 
         .bench {
@@ -36,25 +39,38 @@
             position: absolute;
             top: 0;
             left: 0;
-            right: 0;
-            bottom: 0;
-            background-position: center;
+            right: 0px;
+            bottom: 0px;
             background-repeat: no-repeat;
             background-size: cover;
         }
 
 
         .score {
-            font-size: 34px;
+            position: relative;
+            margin: 40px 0;
+            padding: 14px 16px;
+            font-size: 40px;
+            line-height: 40px;
+            font-weight: 600;
+            font-smoothing: antialiased;
+            -webkit-font-smoothing: antialiased;
+            +border-radius(4px);
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
         }
 
         #Scoreboard {
             font-size: 30px;
+            margin: -200px 0 0 0;
         }
 
         .barki {
             z-index: 2;
 
+        }
+        .description {
+            margin: -220px 400px 0 0;
         }
     </style>
     <meta charset="UTF-8">
