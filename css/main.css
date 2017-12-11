@@ -508,6 +508,7 @@ h3 {
 #form-scroll a {
     padding-top: 80px;
     margin-top: 80px;
+    display: block;
 }
 
 #form-scroll a span {
