@@ -1,0 +1,25 @@
+img {
+display: flex;
+    top: 25px;
+    left: 25px;
+
+}
+.imgage {
+    z-index: 1;
+}
+.sztanga {
+    position: absolute;
+    /*top: 10px;*/
+    height: 100vh;
+    z-index: 2;
+    overflow: hidden;
+}
+.sztanga img {
+    margin-top: 38vh;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
